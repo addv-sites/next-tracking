@@ -3,6 +3,7 @@ import { initScrollReveal } from './modules/scrollReveal.js';
 import { initLoginModal } from './modules/loginModal.js';
 import { initChatWidget } from './modules/chatWidget.js';
 import { initLeadForm } from './modules/leadForm.js';
+import { initMobileNav } from './modules/mobileNav.js';
 
 document.documentElement.classList.remove('no-js');
 document.body.classList.remove('no-js');
@@ -11,3 +12,4 @@ initScrollReveal();
 initLoginModal();
 initChatWidget();
 initLeadForm();
+initMobileNav();
