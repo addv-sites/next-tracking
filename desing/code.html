@@ -1,0 +1,792 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Nextracking | Rastreo Satelital y Telemetría Avanzada</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed":"#cce5ff","error":"#ba1a1a","on-tertiary-container":"#ecf4ff","surface-dim":"#d2d9f4","surface-bright":"#faf8ff","on-primary-fixed-variant":"#003ea8","surface-container-lowest":"#ffffff","surface-container-high":"#e2e7ff","on-secondary":"#ffffff","surface":"#faf8ff","inverse-on-surface":"#eef0ff","primary-fixed-dim":"#b4c5ff","primary-container":"#0062ff","primary":"#004cca","secondary-fixed-dim":"#75d1ff","secondary-container":"#00c1fd","surface-container":"#eaedff","on-background":"#131b2e","tertiary-fixed-dim":"#93ccff","tertiary":"#005b8c","primary-fixed":"#dbe1ff","inverse-surface":"#283044","surface-variant":"#dae2fd","on-surface-variant":"#424656","inverse-primary":"#b4c5ff","on-secondary-fixed":"#001e2b","on-tertiary-fixed-variant":"#004b73","surface-container-low":"#f2f3ff","on-tertiary":"#ffffff","tertiary-container":"#0075b1","on-tertiary-fixed":"#001d31","surface-tint":"#0053da","on-secondary-container":"#004b65","outline":"#737687","on-error":"#ffffff","on-surface":"#131b2e","on-primary":"#ffffff","outline-variant":"#c2c6d9","secondary":"#006688","on-primary-container":"#f3f3ff","on-primary-fixed":"#00174b","error-container":"#ffdad6","secondary-fixed":"#c2e8ff","on-secondary-fixed-variant":"#004d67","background":"#faf8ff","surface-container-highest":"#dae2fd","on-error-container":"#93000a"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-xl":"2.5rem","space-2xs":"0.25rem","space-3xl":"6rem","space-sm":"0.75rem","space-md":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem","gutter":"1.5rem","space-2xl":"4rem","gutter-mobile":"1rem","space-xs":"0.5rem","margin":"2rem"},fontFamily:{"headline-hero":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"badge-caps":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-hero-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"headline-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"badge-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-hero-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-xs" data-path="inicio" href="#"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-container text-on-primary-container shadow-[0_10px_20px_-3px_rgba(0,98,255,0.35)]"><span class="material-symbols-outlined text-lg">satellite_alt</span></span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none font-bold">NEXTRACKING</span><span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">Rastreo Satelital</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="quienes-somos" href="#">Quiénes Somos</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="servicios" href="#">Servicios</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="precios" href="#">Precios</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="garantias" href="#">Garantías</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="hacia-donde-vamos" href="#">Hacia Dónde Vamos</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="contacto" href="#">Contacto</a><a class="inline-flex items-center gap-space-xs px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shadow-[0_10px_20px_-3px_rgba(0,98,255,0.35)] hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5" data-path="login" href="#"><span>Login</span><span class="material-symbols-outlined text-base">login</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]" src="https://lh3.googleusercontent.com/aida/ALJJyrD8De7elqlE2bKtCRKyHDLx79-MTYYY38wXoRFKB7X_ss151tMVk7vVLC9rp2Y4dmbcMGnbEK6fASPZzWaRlgP8NAo2eud36Mt0JR_yTO-iMDib_3TxltZC_ioMvmPmJbS2UPNIpsGtfOIUdQzyOk57K9_ks2aqqCJky24HcryyTdta7LrUw6cHI0c1ZF2F3u2BbT869SeNKQyqb197KileLAzSk7bltaQXWww4MPIFj0M71BMY1Zzb9h8"></div></div></header><main class="w-full pt-20 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full bg-surface-container-lowest text-on-surface">
+<!-- ==================== HERO SECTION ==================== -->
+<section class="relative w-full pt-space-xl pb-space-3xl overflow-hidden bg-gradient-to-b from-surface-container-low/60 via-surface-container-lowest to-surface-container-lowest">
+<!-- Ambient luminous cyan/blue subtle glow (light mode, clean) -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[880px] h-[340px] bg-secondary-fixed/30 rounded-full blur-[110px] pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-10 w-[380px] h-[280px] bg-primary-fixed/40 rounded-full blur-[90px] pointer-events-none -z-10"></div>
+<div class="max-w-[1280px] mx-auto px-margin flex flex-col items-center text-center">
+<!-- Eyebrow Badge (Match requested: TECNOLOGÍA SATELITAL DE VANGUARDIA) -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-secondary-fixed/50 text-secondary font-badge-caps text-badge-caps uppercase tracking-wider mb-space-lg shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-bold">TECNOLOGÍA SATELITAL DE VANGUARDIA</span>
+</div>
+<!-- Hero Headline with dual tone: Plataforma Integral de / Rastreo Satelital -->
+<h1 class="font-headline-hero text-headline-hero text-on-surface max-w-4xl tracking-tight leading-none mb-space-md">
+        Plataforma Integral de<br>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-primary to-secondary-container">
+          Rastreo Satelital
+        </span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-space-xl leading-relaxed">
+        Innovación y Seguridad para tus Unidades. Gestión inteligente, eficiente e instantánea al cuidado de tu patrimonio.
+      </p>
+<!-- Primary Action Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mb-space-2xl">
+<a class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_10px_20px_-3px_rgba(0,98,255,0.35)] hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5" href="#planes">
+<span>Ver Planes y Precios</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<button class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all duration-200 transform hover:-translate-y-0.5" id="open-demo-chat-btn" type="button">
+<span class="material-symbols-outlined text-primary text-base">chat_bubble</span>
+<span>Asistente Virtual Demo</span>
+</button>
+</div>
+<!-- 4 Key Value Cards directly below hero CTAs -->
+<div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-2xl">
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-space-sm text-left">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/60 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Rastreo 24/7 en Tiempo Real</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Subsegundo de actualización</p>
+</div>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-space-sm text-left">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/70 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Protocolo Policial Directo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Enlace C5 y recuperación</p>
+</div>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-space-sm text-left">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/70 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">memory</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Telemetría con IA ADAS/DSM</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Detección de fatiga y carril</p>
+</div>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-space-sm text-left">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/60 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">devices</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-label-md text-label-md text-on-surface font-bold leading-tight">App iOS, Android y WhatsApp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Notificaciones multi-canal</p>
+</div>
+</div>
+</div>
+<!-- Fleet Visual Canvas with Telemetry HUD Overlay -->
+<div class="relative w-full rounded-lg overflow-hidden shadow-xl bg-surface-container-low">
+<img alt="Flota corporativa de tractocamiones y vehículos con monitoreo satelital en vivo por carretera" class="w-full h-[400px] lg:h-[480px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmo7TJfMO9DFcvKR7oDALIHSgw1UZ3WqEUnZAewBGBOnp9Hrh1gV7OwERanvzroXdck3B2_OcEDJh9LIXEmxjLYLeOVn3cmCmlXeNuPSBcaD-Mja1K-SOth76Y46vgepwYru7x_6ycdslUcs9HjK3sZj0-ictN2kw0twUEwgAbkbJJNj_vPvHfUvbAUPOfg43Gpo4AtmS8Rg5MvPkJEhIPUoNsLBnbrkq64hXC5DlA">
+<!-- Floating Light Telemetry HUD Elements on pure light overlays -->
+<div class="absolute top-space-md left-space-md backdrop-blur-md bg-surface-container-lowest/90 px-space-md py-space-sm rounded-DEFAULT shadow-md flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-secondary-container animate-ping"></div>
+<div class="text-left">
+<div class="font-badge-caps text-badge-caps text-secondary uppercase font-bold">Unidad NX-409 | Activa</div>
+<div class="font-label-sm text-label-sm font-semibold text-on-surface">Carretera 57D Querétaro-CDMX • 84 km/h</div>
+</div>
+</div>
+<div class="hidden sm:flex absolute bottom-space-md left-space-md backdrop-blur-md bg-surface-container-lowest/95 px-space-lg py-space-sm rounded-DEFAULT shadow-md items-center gap-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-lg">satellite_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">18 Satélites Fijados</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-lg">local_gas_station</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Sensor Diésel: 94.2%</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">lock</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Paro de Motor: Listo</span>
+</div>
+</div>
+<div class="absolute top-space-md right-space-md backdrop-blur-md bg-surface-container-lowest/90 px-space-md py-space-sm rounded-DEFAULT shadow-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">shield</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Custodia Satelital Activa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== PLATAFORMA INTEGRAL: 3 PILARES ==================== -->
+<section class="w-full py-space-3xl bg-surface-container-lowest">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div class="space-y-space-xs max-w-xl">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-primary-container font-bold">SEGURIDAD Y CONTROL DE EXTENSIÓN TOTAL</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Capacidades Críticas para Proteger tu Inversión</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Diseñado para soportar tanto flotas logísticas de carga pesada como vehículos utilitarios y maquinaria especializada con precisión milimétrica.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="p-space-lg rounded-lg bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-2xl">location_searching</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Monitoreo y Geocercas Dinámicas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Configura polígonos de alerta automáticos. Si una unidad sale de ruta autorizada o se detiene en zonas de riesgo, el sistema detona protocolos de emergencia instantáneos.
+            </p>
+</div>
+<ul class="space-y-space-2xs pt-space-xs">
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Historial de recorridos 90 días</span>
+</li>
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Alertas de velocidad y paradas no autorizadas</span>
+</li>
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Compartir ubicación en vivo con clientes</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg rounded-lg bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-2xl">power_settings_new</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Paro de Motor Remoto Inmediato</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Corta el suministro eléctrico o de combustible de manera segura y gradual con un solo clic desde tu teléfono o computadora ante cualquier sospecha de desvío o robo.
+            </p>
+</div>
+<ul class="space-y-space-2xs pt-space-xs">
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Ejecución en menos de 3 segundos</span>
+</li>
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Protección anti-desconexión y sabotaje</span>
+</li>
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span>Coordinación directa con C5 estatal</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg rounded-lg bg-surface-container-low shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Telemetría de Combustible y Motor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Controla cargas, descargas y posibles ordeñas de diésel con precisión del 99%. Diagnóstico OBD-II / CAN-Bus para detectar fallas mecánicas preventivas.
+            </p>
+</div>
+<ul class="space-y-space-2xs pt-space-xs">
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Reportes de litros cargados vs consumidos</span>
+</li>
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Alertas de caída súbita de combustible</span>
+</li>
+<li class="flex items-center gap-space-xs text-body-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Score de hábitos de conducción del chofer</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== HARDWARE HOMOLOGADO INDUSTRIAL ==================== -->
+<section class="w-full py-space-3xl bg-surface-container-low/50">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl space-y-space-xs">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-secondary font-bold">TECNOLOGÍA ROBUSTA Y CERTIFICADA</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Equipos Homologados de Grado Industrial</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Trabajamos únicamente con marcas líderes y sensores de precisión militar con certificación IP67 y respaldo de batería interna.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Hardware 1: ST310U -->
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-badge-caps text-badge-caps px-space-xs py-space-2xs rounded-full bg-primary-fixed/60 text-primary-container font-bold">4G LTE MULTIBANDA</span>
+<span class="material-symbols-outlined text-primary">router</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-2xs">GPS Suntech ST310U</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Diseñado para vehículos comerciales, camionetas de reparto y automóviles ejecutivos con alta tasa de refresco.</p>
+<div class="space-y-space-xs text-body-sm text-on-surface mb-space-md">
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Batería interna:</span>
+<span class="font-semibold">Backup 450 mAh</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Antenas:</span>
+<span class="font-semibold">Internas integradas</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Sensor de choque:</span>
+<span class="font-semibold">Acelerómetro 3D</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-primary font-label-sm font-semibold">
+<span>Ver ficha técnica</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</div>
+</div>
+<!-- Hardware 2: ST4315B -->
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-badge-caps text-badge-caps px-space-xs py-space-2xs rounded-full bg-secondary-fixed/70 text-secondary font-bold">IP67 SELLADO</span>
+<span class="material-symbols-outlined text-secondary">water_drop</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-2xs">GPS Suntech ST4315B</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Carcasa hermética de uso rudo para tractocamiones, cajas secas, plataformas y maquinaria pesada expuesta.</p>
+<div class="space-y-space-xs text-body-sm text-on-surface mb-space-md">
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Protección:</span>
+<span class="font-semibold">IP67 Polvo y Agua</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Batería:</span>
+<span class="font-semibold">Hasta 72 hrs standby</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Entradas I/O:</span>
+<span class="font-semibold">RS232 + 1-Wire</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-secondary font-label-sm font-semibold">
+<span>Ver ficha técnica</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</div>
+</div>
+<!-- Hardware 3: ST9730 Dashcam IA -->
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-badge-caps text-badge-caps px-space-xs py-space-2xs rounded-full bg-tertiary-fixed/70 text-tertiary font-bold">ADAS &amp; DSM IA</span>
+<span class="material-symbols-outlined text-tertiary">videocam</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-2xs">Dashcam IA ST9730</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Cámara dual inteligente con detección de bostezos, uso de celular al volante y alerta de colisión frontal.</p>
+<div class="space-y-space-xs text-body-sm text-on-surface mb-space-md">
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Resolución:</span>
+<span class="font-semibold">1080p FHD Dual</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Video en vivo:</span>
+<span class="font-semibold">Transmisión 4G</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Alertas:</span>
+<span class="font-semibold">Audio en cabina</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-tertiary font-label-sm font-semibold">
+<span>Ver ficha técnica</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</div>
+</div>
+<!-- Hardware 4: Sensor Diésel ST300F -->
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-badge-caps text-badge-caps px-space-xs py-space-2xs rounded-full bg-primary-fixed/60 text-primary font-bold">PRECISIÓN 99.5%</span>
+<span class="material-symbols-outlined text-primary">straighten</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-2xs">Vara Diésel ST300F</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Sensor capacitivo de nivel de combustible calibrado a la medida exacta del tanque de tu camión o cisterna.</p>
+<div class="space-y-space-xs text-body-sm text-on-surface mb-space-md">
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Longitud:</span>
+<span class="font-semibold">Hasta 1500 mm</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Lectura:</span>
+<span class="font-semibold">Digital capacitiva</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<span class="text-outline">Alarma:</span>
+<span class="font-semibold">Extracción inmediata</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-primary font-label-sm font-semibold">
+<span>Ver ficha técnica</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== PLANES COMERCIALES TRANSPARENTES ==================== -->
+<section class="w-full py-space-3xl bg-surface-container-lowest" id="planes">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl space-y-space-xs">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-primary-container font-bold">INVERSIÓN CLARA Y SIN SORPRESAS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Planes de Implementación y Monitoreo</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Todos los paquetes incluyen equipo nuevo de grado industrial, instalación profesional a domicilio y 1 año completo de plataforma y soporte.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-stretch">
+<!-- Plan 1: Automóvil / Utilitario -->
+<div class="p-space-xl rounded-lg bg-surface-container-low/60 shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-primary font-bold">VEHÍCULO LIGERO</span>
+<span class="material-symbols-outlined text-primary-container">directions_car</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-2xs">Automóvil / Pickup</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Para vehículos particulares, flotillas de ventas y reparto local urbano.</p>
+<div class="flex items-baseline gap-space-2xs mb-space-lg">
+<span class="font-headline-hero text-headline-hero text-on-surface leading-none font-extrabold">$7,500</span>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">MXN / Pago Único</span>
+</div>
+<ul class="space-y-space-xs text-body-sm text-on-surface mb-space-lg">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">check</span>
+<span>Dispositivo GPS 4G LTE Homologado</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">check</span>
+<span>Instalación profesional oculta incluida</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">check</span>
+<span>1 Año completo de plataforma web y app</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">check</span>
+<span>Paro de motor seguro y botón de pánico</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">check</span>
+<span>Soporte 24/7 y garantía de reposición</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-primary-fixed/50 transition-all duration-200" href="https://wa.me/525586491565?text=Hola,%20me%20interesa%20contratar%20el%20plan%20Automóvil%20de%20$7,500" target="_blank">
+<span>Contratar Plan Auto</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Plan 2: Tractocamión (Featured) -->
+<div class="relative p-space-xl rounded-lg bg-surface-container-lowest shadow-xl flex flex-col justify-between transform md:-translate-y-2">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-space-md py-space-2xs rounded-full bg-primary-container text-on-primary font-badge-caps text-badge-caps font-bold shadow-md">
+            MÁS SOLICITADO TRANSPORTE
+          </div>
+<div>
+<div class="flex items-center justify-between mb-space-sm pt-space-xs">
+<span class="font-label-md text-label-md text-primary-container font-bold">TRANSPORTE PESADO</span>
+<span class="material-symbols-outlined text-primary-container">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-2xs">Tractocamión / Quinta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Aseguramiento de cabina para transporte de carga pesada nacional e internacional.</p>
+<div class="flex items-baseline gap-space-2xs mb-space-lg">
+<span class="font-headline-hero text-headline-hero text-primary-container leading-none font-extrabold">$7,500</span>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">MXN / Pago Único</span>
+</div>
+<ul class="space-y-space-xs text-body-sm text-on-surface mb-space-lg">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base">check_circle</span>
+<span class="font-semibold">GPS Grado Industrial Robusto 4G LTE</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base">check_circle</span>
+<span>Instalación especializada para tractos</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base">check_circle</span>
+<span>1 Año de plataforma multi-usuario Nextracking</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base">check_circle</span>
+<span>Protocolo de enlace directo con C5 y Policía</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base">check_circle</span>
+<span>Compatibilidad para sensor de diésel y dashcam</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base">check_circle</span>
+<span>Soporte telefónico de cabina 24/7/365</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_10px_20px_-3px_rgba(0,98,255,0.35)] hover:bg-primary transition-all duration-200" href="https://wa.me/525586491565?text=Hola,%20me%20interesa%20contratar%20el%20plan%20Tractocamión%20de%20$7,500" target="_blank">
+<span>Contratar Tractocamión</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Plan 3: Plataforma / Caja Seca -->
+<div class="p-space-xl rounded-lg bg-surface-container-low/60 shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-200">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary font-bold">REMOLQUES Y CAJAS</span>
+<span class="material-symbols-outlined text-secondary">rv_hookup</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-extrabold mb-space-2xs">Plataforma / Remolque</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Localizador hermético IP67 con batería de larga duración para cajas secas o refrigeradas.</p>
+<div class="flex items-baseline gap-space-2xs mb-space-lg">
+<span class="font-headline-hero text-headline-hero text-on-surface leading-none font-extrabold">$9,500</span>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">MXN / Pago Único</span>
+</div>
+<ul class="space-y-space-xs text-body-sm text-on-surface mb-space-lg">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check</span>
+<span>GPS Sellado IP67 Anti-agua y lodo</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check</span>
+<span>Batería interna de hasta 30 días de autonomía</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check</span>
+<span>Instalación con fijación antivibratoria</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check</span>
+<span>Sensor de apertura de puertas y enganche</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check</span>
+<span>1 Año de plataforma satelital incluido</span>
+</li>
+</ul>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm hover:bg-secondary-fixed/50 transition-all duration-200" href="https://wa.me/525586491565?text=Hola,%20me%20interesa%20contratar%20el%20plan%20Plataforma%20de%20$9,500" target="_blank">
+<span>Contratar Plataforma</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Note below pricing -->
+<div class="mt-space-xl p-space-md rounded-DEFAULT bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-left">
+<span class="material-symbols-outlined text-primary-container text-2xl">verified</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">¿Tienes una flota de más de 5 unidades?</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Ofrecemos tarifas corporativas por volumen e integraciones personalizadas vía API / Webhooks.</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm hover:text-primary transition-colors duration-150 shrink-0" href="tel:5586491565">
+<span class="material-symbols-outlined text-base">call</span>
+<span>Llamar a Ventas: 55 8649 1565</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ==================== GARANTÍAS Y RESPALDO OPERATIVO ==================== -->
+<section class="w-full py-space-3xl bg-surface-container-low/40">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-center">
+<div class="space-y-space-md">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-primary font-bold">COMPROMISO CONTRACTUAL</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Garantía Total de Disponibilidad y Respuesta</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Nextracking no es solo un vendedor de equipos. Somos tu centro de operaciones satelitales que vigila tus unidades con infraestructura en la nube redundantemente respaldada.
+          </p>
+<div class="space-y-space-sm pt-space-xs">
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-xl mt-0.5">security_update_good</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">99.9% Uptime en Servidores Satelitales</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Infraestructura multi-región para que jamás pierdas la traza de tus vehículos en carretera.</p>
+</div>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5">policy</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Garantía por Escrito de Reemplazo Inmediato</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Si un dispositivo presenta falla de fábrica durante el año de servicio, lo sustituimos sin costo.</p>
+</div>
+</div>
+<div class="p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">support_agent</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Cabina de Monitoreo Humano 24/7/365</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Operadores reales listos para activar botón de pánico y canalizar a corporaciones federales.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Clean Metric Card Cluster -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm text-center flex flex-col justify-center">
+<span class="font-headline-hero text-headline-hero text-primary-container font-extrabold mb-space-2xs leading-none">+8,500</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Unidades Monitoreadas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">En toda la República</span>
+</div>
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm text-center flex flex-col justify-center">
+<span class="font-headline-hero text-headline-hero text-secondary font-extrabold mb-space-2xs leading-none">98.4%</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Índice de Recuperación</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">En eventos de siniestro</span>
+</div>
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm text-center flex flex-col justify-center">
+<span class="font-headline-hero text-headline-hero text-primary font-extrabold mb-space-2xs leading-none">&lt; 3s</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Latencia de Alerta</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Transmisión 4G LTE</span>
+</div>
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-lowest shadow-sm text-center flex flex-col justify-center">
+<span class="font-headline-hero text-headline-hero text-tertiary font-extrabold mb-space-2xs leading-none">32</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Estados de Cobertura</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Red Telcel / AT&amp;T Multi-carrier</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FORMULARIO DE CONTACTO Y CONVERSIÓN ==================== -->
+<section class="w-full py-space-3xl bg-surface-container-lowest" id="contacto">
+<div class="max-w-[1280px] mx-auto px-margin">
+<div class="rounded-lg bg-surface-container-low p-space-xl lg:p-space-2xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-badge-caps text-badge-caps uppercase tracking-wider text-primary font-bold">ATENCIÓN INMEDIATA</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Comienza a Proteger tus Unidades Hoy Mismo</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Ponte en contacto con nuestro equipo comercial para agendar la instalación en tus patios o coordinar una demostración en vivo de la consola de telemetría.
+            </p>
+<div class="space-y-space-md pt-space-xs">
+<a class="flex items-center gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-high transition-colors" href="tel:5586491565">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/60 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">call</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm font-semibold text-outline">Línea Directa / WhatsApp</div>
+<div class="font-label-md text-label-md font-bold text-on-surface">55 8649 1565</div>
+</div>
+</a>
+<a class="flex items-center gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-lowest shadow-sm hover:bg-surface-container-high transition-colors" href="mailto:nextrackingmexico@gmail.com">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/70 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">mail</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm font-semibold text-outline">Correo Oficial</div>
+<div class="font-label-md text-label-md font-bold text-on-surface">nextrackingmexico@gmail.com</div>
+</div>
+</a>
+<div class="flex items-center gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/70 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">location_on</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm font-semibold text-outline">Centro de Distribución</div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Hidalgo, México • Instalaciones a Nivel Nacional</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Quote Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-DEFAULT shadow-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Solicitud de Cotización Exprés</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Respuesta en menos de 15 minutos en horario operativo.</p>
+<form class="space-y-space-md" id="quote-form" onsubmit="event.preventDefault(); alert('¡Gracias! Un asesor de Nextracking se comunicará de inmediato a tu teléfono.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-space-2xs">Nombre Completo</label>
+<input class="w-full px-space-md py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm" placeholder="Ing. Roberto Garza" required="" type="text">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-space-2xs">Teléfono Móvil (WhatsApp)</label>
+<input class="w-full px-space-md py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm" placeholder="55 1234 5678" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-space-2xs">Correo Electrónico</label>
+<input class="w-full px-space-md py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm" placeholder="logistica@empresa.com" required="" type="email">
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-space-2xs">Tipo de Unidades</label>
+<select class="w-full px-space-md py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm">
+<option>Tractocamiones / Torton (Carga Pesada)</option>
+<option>Camionetas de Reparto / Pickups</option>
+<option>Cajas Secas / Plataformas</option>
+<option>Automóviles Particulares / Ejecutivos</option>
+<option>Maquinaria Pesada / Construcción</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-space-2xs">Número aproximado de vehículos y necesidades particulares</label>
+<textarea class="w-full px-space-md py-space-xs rounded-DEFAULT bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container shadow-sm" placeholder="Ej: Necesito rastreo para 4 tractocamiones con sensor de diésel e instalación en Pachuca/CDMX..." rows="3"></textarea>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_10px_20px_-3px_rgba(0,98,255,0.35)] hover:bg-primary transition-all duration-200" type="submit">
+<span>Enviar Solicitud Inmediata</span>
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== ASISTENTE VIRTUAL FLOTANTE INTERACTIVO ==================== -->
+<!-- Floating launcher button in the bottom right corner (Matches image: "Chat con Asistente ●") -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+<!-- Collapsible Chat Modal / Window -->
+<div class="hidden mb-4 w-[360px] sm:w-[400px] max-w-[calc(100vw-32px)] bg-surface-container-lowest rounded-lg shadow-2xl overflow-hidden transition-all duration-300" id="virtual-assistant-window">
+<!-- Assistant Header -->
+<div class="bg-gradient-to-r from-primary-container to-primary px-space-md py-space-sm text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-on-primary backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">smart_toy</span>
+</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold leading-tight">Asistente Nextracking</div>
+<div class="font-label-sm text-label-sm text-surface-container-high flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span> En línea 24/7
+            </div>
+</div>
+</div>
+<button class="text-on-primary hover:bg-surface-container-lowest/20 rounded-full w-8 h-8 flex items-center justify-center transition-colors" id="close-chat-btn" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Chat Log Area -->
+<div class="p-space-md space-y-space-sm max-h-[360px] overflow-y-auto bg-surface-container-low/40" id="chat-messages">
+<!-- Bot Welcome Bubble -->
+<div class="flex items-start gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary-fixed/60 text-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm">satellite_alt</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-2xl rounded-tl-none shadow-sm text-body-sm text-on-surface max-w-[85%]">
+            ¡Hola! 👋 Soy el asistente virtual de <strong>Nextracking</strong>. ¿En qué podemos ayudarte hoy?
+          </div>
+</div>
+<!-- Interactive Quick Action Chips -->
+<div class="pl-9 space-y-1.5">
+<p class="font-label-sm text-label-sm text-outline">Opciones sugeridas:</p>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary text-xs font-semibold shadow-sm hover:bg-primary-fixed/40 transition-colors text-left" onclick="sendQuickOption('Cotizar para Tractocamión ($7,500 MXN)')">
+              🚛 Cotizar Tractocamión
+            </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary text-xs font-semibold shadow-sm hover:bg-primary-fixed/40 transition-colors text-left" onclick="sendQuickOption('Ver Planes y Precios disponibles')">
+              💳 Ver Precios
+            </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary text-xs font-semibold shadow-sm hover:bg-primary-fixed/40 transition-colors text-left" onclick="sendQuickOption('¿Cómo funciona el Paro de Motor remoto?')">
+              🛑 Paro de Motor
+            </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-secondary text-xs font-semibold shadow-sm hover:bg-secondary-fixed/50 transition-colors text-left" onclick="sendQuickOption('Hablar con un asesor comercial humano')">
+              👤 Asesor Humano (WhatsApp)
+            </button>
+</div>
+</div>
+</div>
+<!-- Chat Input Area -->
+<form class="p-space-sm bg-surface-container-lowest flex items-center gap-space-xs" id="chat-input-form" onsubmit="handleChatSubmit(event)">
+<input class="flex-1 px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" id="chat-user-text" placeholder="Escribe tu duda aquí..." type="text">
+<button class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md hover:bg-primary transition-colors shrink-0" type="submit">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+<!-- Main Floating Pill Button (Exactly styled like screenshot: Chat con Asistente + dot) -->
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_12px_28px_-4px_rgba(0,98,255,0.4)] hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer" id="chat-toggle-btn" type="button">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>Chat con Asistente</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse ml-0.5"></span>
+</button>
+</div>
+</div>
+<!-- Inline micro-interaction script for the assistant -->
+<script>
+  (function initChatWidget() {
+    const chatBtn = document.getElementById('chat-toggle-btn');
+    const demoOpenBtn = document.getElementById('open-demo-chat-btn');
+    const chatWindow = document.getElementById('virtual-assistant-window');
+    const closeBtn = document.getElementById('close-chat-btn');
+    const messagesContainer = document.getElementById('chat-messages');
+
+    function toggleChat() {
+      chatWindow.classList.toggle('hidden');
+      if (!chatWindow.classList.contains('hidden')) {
+        document.getElementById('chat-user-text').focus();
+      }
+    }
+
+    if (chatBtn) chatBtn.addEventListener('click', toggleChat);
+    if (demoOpenBtn) demoOpenBtn.addEventListener('click', () => {
+      chatWindow.classList.remove('hidden');
+      chatWindow.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      document.getElementById('chat-user-text').focus();
+    });
+    if (closeBtn) closeBtn.addEventListener('click', () => chatWindow.classList.add('hidden'));
+
+    window.sendQuickOption = function(text) {
+      appendUserMessage(text);
+      setTimeout(() => {
+        respondBot(text);
+      }, 500);
+    };
+
+    window.handleChatSubmit = function(e) {
+      e.preventDefault();
+      const input = document.getElementById('chat-user-text');
+      const val = input.value.trim();
+      if (!val) return;
+      appendUserMessage(val);
+      input.value = '';
+      setTimeout(() => {
+        respondBot(val);
+      }, 600);
+    };
+
+    function appendUserMessage(text) {
+      const userBubble = document.createElement('div');
+      userBubble.className = 'flex justify-end';
+      userBubble.innerHTML = `
+        <div class="bg-primary-container text-on-primary p-space-sm rounded-2xl rounded-tr-none shadow-sm text-body-sm max-w-[85%]">
+          ${text}
+        </div>
+      `;
+      messagesContainer.appendChild(userBubble);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function respondBot(userQuery) {
+      const botBubble = document.createElement('div');
+      botBubble.className = 'flex items-start gap-space-xs';
+
+      let reply = "Con gusto. Te canalizamos de inmediato con un especialista técnico de Nextracking o puedes llamarnos al 55 8649 1565.";
+      const queryLower = userQuery.toLowerCase();
+
+      if (queryLower.includes('tracto') || queryLower.includes('precio') || queryLower.includes('cotizar')) {
+        reply = "El paquete para Tractocamión incluye equipo industrial 4G LTE, paro de motor y 1 año de plataforma completa por solo $7,500 MXN sin mensualidades forzosas. ¿Te gustaría agendar una instalación?";
+      } else if (queryLower.includes('paro') || queryLower.includes('motor')) {
+        reply = "El paro de motor se activa con 1 toque desde la App móvil. Es progresivo para evitar accidentes y bloquea el encendido hasta que tú lo autorices nuevamente.";
+      } else if (queryLower.includes('humano') || queryLower.includes('asesor') || queryLower.includes('whatsapp')) {
+        reply = "¡Perfecto! Puedes contactar a nuestro director operativo por WhatsApp dando clic directo en: <a href='https://wa.me/525586491565' target='_blank' class='underline font-bold text-primary'>Enviar WhatsApp al 55 8649 1565</a>.";
+      }
+
+      botBubble.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-primary-fixed/60 text-primary-container flex items-center justify-center shrink-0 mt-0.5">
+          <span class="material-symbols-outlined text-sm">satellite_alt</span>
+        </div>
+        <div class="bg-surface-container-lowest p-space-sm rounded-2xl rounded-tl-none shadow-sm text-body-sm text-on-surface max-w-[85%]">
+          ${reply}
+        </div>
+      `;
+      messagesContainer.appendChild(botBubble);
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-[1280px] mx-auto px-margin py-space-3xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-xs"><span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary"><span class="material-symbols-outlined text-sm">satellite_alt</span></span><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">NEXTRACKING</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Soluciones corporativas de rastreo satelital, telemetría avanzada y aseguramiento logístico en tiempo real con cobertura integral y soporte 24/7.</p><div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-container text-secondary font-badge-caps text-badge-caps"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span>TELEMETRÍA SATELITAL ACTIVA</span></div></div><div class="space-y-space-sm"><h3 class="font-label-md text-label-md text-on-surface font-bold">Navegación Institucional</h3><ul class="space-y-space-xs"><li class="flex"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="quienes-somos" href="#">Quiénes Somos</a></li><li class="flex"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="servicios" href="#">Servicios Especializados</a></li><li class="flex"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="precios" href="#">Planes y Precios</a></li><li class="flex"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="garantias" href="#">Garantías de Servicio</a></li><li class="flex"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="hacia-donde-vamos" href="#">Hacia Dónde Vamos</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-md text-label-md text-on-surface font-bold">Contacto Oficial</h3><ul class="space-y-space-sm"><li class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-primary text-base mt-0.5">call</span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Central de Atención</span><a class="font-body-sm text-body-sm hover:text-primary transition-colors duration-150" href="tel:5586491565">55 8649 1565</a></div></li><li class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-primary text-base mt-0.5">mail</span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Correo Corporativo</span><a class="font-body-sm text-body-sm hover:text-primary transition-colors duration-150" href="mailto:nextrackingmexico@gmail.com">nextrackingmexico@gmail.com</a></div></li><li class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Ubicación Corporativa</span><span class="font-body-sm text-body-sm">Hidalgo, México</span></div></li></ul></div><div class="space-y-space-sm"><h3 class="font-label-md text-label-md text-on-surface font-bold">Centro de Acceso</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Acceda a la consola de monitoreo cartográfico en vivo para flotas y activos en tránsito.</p><a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-primary hover:bg-primary-container hover:text-on-primary-container font-label-sm text-label-sm transition-all duration-200" data-path="login" href="#"><span class="material-symbols-outlined text-base">speed</span><span>Consola de Monitoreo</span></a><div class="pt-space-xs"><span class="font-badge-caps text-badge-caps text-outline uppercase">Soporte Operativo 24/7/365</span></div></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low"><p class="font-body-sm text-body-sm text-outline">© 2025 Nextracking México. Todos los derechos reservados.</p><div class="flex flex-wrap items-center gap-space-lg"><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors duration-150" data-path="aviso-de-privacidad" href="#">Aviso de Privacidad</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors duration-150" data-path="terminos-y-condiciones" href="#">Términos y Condiciones</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors duration-150" data-path="politica-seguridad" href="#">Seguridad Telemetría</a></div></div></div></footer>
+
+
+
+</body></html>

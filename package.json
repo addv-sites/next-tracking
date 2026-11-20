@@ -1,0 +1,20 @@
+{
+  "name": "nextracking-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "generate:images": "node scripts/generate-images.mjs"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "openai": "^4.77.0",
+    "postcss": "^8.4.49",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  }
+}
