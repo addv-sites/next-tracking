@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
-// GitHub Pages project site: https://addv-sites.github.io/next-tracking/
+// Dominio propio en GitHub Pages: https://nextracking.com.mx/
 export default defineConfig({
-  base: '/next-tracking/',
+  base: '/',
   build: {
     target: 'es2020',
     cssCodeSplit: false,

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://addv-sites.github.io/next-tracking/sitemap.xml
+Sitemap: https://nextracking.com.mx/sitemap.xml

@@ -2,15 +2,15 @@
   "name": "Nextracking | Rastreo Satelital y Telemetría",
   "short_name": "Nextracking",
   "description": "Plataforma de rastreo satelital, telemetría y protección de flotas en México.",
-  "start_url": "/next-tracking/",
-  "scope": "/next-tracking/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#faf8ff",
   "theme_color": "#0062ff",
   "lang": "es-MX",
   "icons": [
-    { "src": "/next-tracking/favicon-32.png", "sizes": "32x32", "type": "image/png" },
-    { "src": "/next-tracking/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
-    { "src": "/next-tracking/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }

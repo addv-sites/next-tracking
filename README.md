@@ -4,7 +4,7 @@ Landing page de Nextracking: rastreo satelital, telemetría y protección de flo
 en México. Sitio estático (Vite + Tailwind CSS), optimizado para SEO, CRO y
 Core Web Vitals, publicado en GitHub Pages.
 
-**Producción:** https://addv-sites.github.io/next-tracking/
+**Producción:** https://nextracking.com.mx/
 
 ## Stack
 
@@ -23,9 +23,8 @@ npm run build       # build de producción en dist/
 npm run preview     # sirve el build de producción localmente
 ```
 
-El sitio usa `base: '/next-tracking/'` en `vite.config.js` (GitHub Pages
-project site). Si se cambia a un dominio propio o a un repo `*.github.io`
-raíz, ajustar ese valor.
+El sitio usa `base: '/'` en `vite.config.js` (dominio propio `nextracking.com.mx`
+vía GitHub Pages, con archivo `public/CNAME`).
 
 ## Estructura
 
